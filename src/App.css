@@ -1,0 +1,67 @@
+.logo{
+  width: auto;
+  max-height: 90px;
+  margin: 0 0 0 60px;
+animation: pulsing 3s ease-in-out infinite;
+}
+.nav-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.nav{
+ color:#dd5431;
+ text-decoration: none;
+}
+.nav:hover {
+  color: white; /* Change this to your desired hover color */
+  transition: color 0.3s ease; 
+}
+.slide-img{
+  width: 100vw;
+  height: 800px;            /* Ensure the image takes up the full carousel item height */
+  object-fit: cover;  
+  max-width: 100%;
+  min-width: 100%;
+}
+.overlay-image {
+  position: absolute;
+  top: 10px;     /* Position the overlay in the top-left corner */
+  right: 30px;   /* Adjust to your desired corner */
+  width: 9rem;  /* Size of overlay image */
+  height: auto;  /* Maintain aspect ratio */
+  opacity: 1;  /* Optional: make the overlay semi-transparent */
+  /* animation: pulsing 3s ease-in-out infinite ; */
+  animation: rotate 10s linear infinite;
+}
+/* Pulsing effect */
+@keyframes pulsing {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+/* Rotate animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Initial state (no rotation) */
+  }
+  100% {
+    transform: rotate(360deg); /* Complete rotation (360 degrees) */
+  }
+}
+.content-main{
+  width: 100vw;
+  height: 100vh;
+  color: #dd5431;
+  overflow: hidden;
+}
+.copyright{
+  width: 100vw;
+  color: #dd5431;
+}
+.creation-link:hover{
+  color: #dd5431;
+}
