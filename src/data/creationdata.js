@@ -15,7 +15,7 @@ export const creations = [
         "Title" : "Kadatha Povathu Yaaru Part 2",
         "Writer" : "Dhanasekar",
         "Director" : "Mohan Raman",
-        "Year" : "2024",
+        "Year" : "TBD",
         "id" : 2,
         "poster":comingsoon,
     },
