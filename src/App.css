@@ -74,3 +74,9 @@ animation: pulsing 3s ease-in-out infinite;
 .review-carousel{
   background-color: rgb(156, 181, 181);
 }
+/* Custom Carousel Arrow Styles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #dd5431; /* Example: Change to your desired color */
+
+}
