@@ -1,6 +1,5 @@
 import React from "react";
 import { creations } from "../../../data/creationdata";
-import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
