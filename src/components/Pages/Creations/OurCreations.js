@@ -19,7 +19,7 @@ const OurCreations = () => {
               variant="top"
               src={item.poster} // Assuming `imageUrl` is a property in your data
               alt={item.Title}
-              className="img-fluid"
+              className="img-fluid d-none d-md-block"
               style={{ height: "350px", objectFit: "cover" }}
             />
             <Card.Body>

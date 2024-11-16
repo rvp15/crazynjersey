@@ -10,7 +10,7 @@ animation: pulsing 3s ease-in-out infinite;
   justify-content: flex-start;
 }
 .nav{
- color:#dd5431;
+ color:#ec6c4c;
  text-decoration: none;
 }
 .nav:hover {
@@ -55,14 +55,14 @@ animation: pulsing 3s ease-in-out infinite;
 .content-main{
   width: 100vw;
   height: 100vh;
-  color: #dd5431;
+  color: #ec6c4c;
   overflow: hidden;
 }
 .copyright{
   width: 100vw;
-  color: #dd5431;
+  color: #ec6c4c;
 }
 .creation-link:hover{
-  color: #dd5431;
+  color: #ec6c4c;
 }
 

@@ -15,7 +15,7 @@ export const reviews = [
         "comment": "It is wonderfully unpredictable, and despite the newness of the actors, their energy and charisma bring the play to life. It’s a fantastic watch for anyone who loves a good laugh!"
     },
     {
-        "name": "Siva",
+        "name": "Sasidharan",
         "title":"Engaging From Start to Finish",
         "comment":"The chemistry between the characters, combined with some really unexpected plot twists, makes this a thoroughly enjoyable experience. Highly recommend for a fun night out!"
     },
