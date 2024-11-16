@@ -9,13 +9,13 @@ const Reviews = () => {
       <Carousel>
         {reviews.map((item, i) => (
           <Carousel.Item key={i}>
-            <Card className="mx-auto my-4 fs-5 fs-md-5 fs-lg-6 fw-normal rounded-5 fw-normal">
+            <Card className="mx-auto my-4 fs-5 fs-md-5 fs-lg-6 fw-normal rounded-5 fw-normal ">
               <Card.Body
                 className="px-10 my-5"
                 style={{
                   color: "#dd5431",
-                  paddingLeft: "70px",
-                  paddingRight: "70px",
+                  paddingLeft: "95px",
+                  paddingRight: "95px",
                 }}
               >
                 <Card.Title>{item.title}</Card.Title> Reviewed By : {item.name}
@@ -24,6 +24,7 @@ const Reviews = () => {
             </Card>
           </Carousel.Item>
         ))}
+       
       </Carousel>
     </div>
   );
