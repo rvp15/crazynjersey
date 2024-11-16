@@ -6,12 +6,12 @@ const Reviews = () => {
   return (
     <div>
       <h1 className="my-4">Reviews</h1>
-      <Carousel>
+      <Carousel >
         {reviews.map((item, i) => (
-          <Carousel.Item key={i}>
+          <Carousel.Item key={i} >
             <Card className="mx-auto my-4 fs-5 fs-md-5 fs-lg-6 fw-normal rounded-5 fw-normal ">
               <Card.Body
-                className="px-10 my-5"
+                className="px-10 my-5 "
                 style={{
                   color: "#dd5431",
                   paddingLeft: "95px",
