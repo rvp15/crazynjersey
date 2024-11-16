@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crazynjersey/static/css/main.dd893d7a.css",
-    "main.js": "/crazynjersey/static/js/main.8fd83f55.js",
+    "main.css": "/crazynjersey/static/css/main.0acff454.css",
+    "main.js": "/crazynjersey/static/js/main.54637f4a.js",
     "static/js/453.70cbf89c.chunk.js": "/crazynjersey/static/js/453.70cbf89c.chunk.js",
     "static/media/poster.jpg": "/crazynjersey/static/media/poster.44901d9b48bd17998626.jpg",
     "static/media/image4.jpg": "/crazynjersey/static/media/image4.65a7e5d06f8a20576ae2.jpg",
@@ -11,12 +11,12 @@
     "static/media/comingsoon.jpg": "/crazynjersey/static/media/comingsoon.4eaa91cb95dee22b23b8.jpg",
     "static/media/logo4.png": "/crazynjersey/static/media/logo4.b23c40a68e6c57230f54.png",
     "index.html": "/crazynjersey/index.html",
-    "main.dd893d7a.css.map": "/crazynjersey/static/css/main.dd893d7a.css.map",
-    "main.8fd83f55.js.map": "/crazynjersey/static/js/main.8fd83f55.js.map",
+    "main.0acff454.css.map": "/crazynjersey/static/css/main.0acff454.css.map",
+    "main.54637f4a.js.map": "/crazynjersey/static/js/main.54637f4a.js.map",
     "453.70cbf89c.chunk.js.map": "/crazynjersey/static/js/453.70cbf89c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd893d7a.css",
-    "static/js/main.8fd83f55.js"
+    "static/css/main.0acff454.css",
+    "static/js/main.54637f4a.js"
   ]
 }
