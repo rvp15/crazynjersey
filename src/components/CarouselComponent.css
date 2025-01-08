@@ -5,11 +5,11 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  /* background-color: black; */
-  background-image: url('../assets/background.jpg'); /* Use your image here */
-  background-size: cover; /* Ensure the image covers the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent image repetition */
+  background-color: black;
+  /* background-image: url('../assets/background.jpg');  */
+  /* background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; */
 }
 
 .image-left, .image-right {
@@ -72,7 +72,7 @@
   transform: translateY(-50%) translateX(50%); /* Start from the right, off-screen */
   opacity: 0;
   font-size: 70px;
-  color: #923e29;
+  color: #ec6c4c;
   transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 0.5s ease-in-out;
   will-change: transform, opacity;
 }
