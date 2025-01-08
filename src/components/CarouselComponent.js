@@ -1,74 +1,51 @@
-import React from 'react'
-import Carousel from 'react-bootstrap/Carousel';
-import image1 from '../assets/image1.jpg'
-import image2 from '../assets/image4.jpg'
-import image3 from '../assets/image2.jpg'
-import logo1 from '../assets/logo3.png'
+import React, { useEffect, useState } from 'react';
+import image1 from '../assets/left.png';
+import image2 from '../assets/right.png';
+import logo1 from '../assets/logo3.png';
+import './CarouselComponent.css'
 
 const CarouselComponent = () => {
-  return (
-    <div>
-       <Carousel interval={3000} fade>
-      <Carousel.Item>
-        <div className="carousel-image-container">
-              <img
-          src={image1}
-          alt="First slide"
-          className='slide-img'
-        />
-           <img
-            src={logo1}
-            alt="Overlay"
-            className="overlay-image"
-          />
-        </div>
-    
-        <Carousel.Caption>
-          {/* <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <div className="carousel-image-container">
-              <img
-          src={image2}
-          alt="First slide"
-          className='slide-img'
-        />
-           <img
-            src={logo1}
-            alt="Overlay"
-            className="overlay-image"
-          />
-        </div>
-        <Carousel.Caption>
-          {/* <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <div className="carousel-image-container">
-              <img
-          src={image3}
-          alt="First slide"
-          className='slide-img'
-        />
-           <img
-            src={logo1}
-            alt="Overlay"
-            className="overlay-image"
-          />
-        </div>
-        <Carousel.Caption>
-          {/* <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-    </div>
-  )
-}
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [image1, image2];
+  const [showText, setShowText] = useState(false);
+  useEffect(() => {
+    // Set an interval to change images every 3 seconds
+    const interval = setInterval(() => {
+      setCurrentImage(prev => (prev + 1) % images.length);
+    }, 3000); 
 
-export default CarouselComponent
+    // After 3 seconds (image animation completes), show the text
+    const textTimer = setTimeout(() => {
+      setShowText(true);
+    }, 3000); // Wait for images to finish moving
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(textTimer);
+    };
+  }, []);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentImage(prev => (prev + 1) % images.length);
+  //   }, 3000); // Change image every 3 seconds
+  //   return () => clearInterval(interval);
+  // }, []);
+  
+  return (
+    <div className="animation-container">
+      <div className="image-left">
+        <img src={image1} alt="left" className="image"/>
+      </div>
+      <div className="image-right">
+        <img src={image2} alt="right" className="image"/>
+      </div>
+         {/* Text element that appears after the image swap */}
+         <div className={`text ${showText ? 'text-show' : 'text-hide'}`}>
+        A Dramatic Experience
+      </div>
+    </div>
+  );
+};
+
+export default CarouselComponent;

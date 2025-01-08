@@ -1,0 +1,120 @@
+.animation-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: black; */
+  background-image: url('../assets/background.jpg'); /* Use your image here */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.image-left, .image-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  width: 20%; /* Adjust width as needed */
+}
+
+.image-left {
+  left: -100%; /* Start off-screen on the left */
+  animation: moveLeftRight 3s forwards; /* Animate once and stay at final position */
+  z-index: 1;
+}
+
+.image-right {
+  right: -100%; /* Start off-screen on the right */
+  animation: moveRightLeft 3s forwards; /* Animate once and stay at final position */
+}
+
+.image {
+  width: 100%; /* Ensure image takes up the container width */
+  height: auto;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: -100%; /* Off-screen left */
+    opacity: 0;
+  }
+  50% {
+    left: 50%; /* Cross the center */
+    opacity: 1;
+  }
+  100% {
+    left: 13%; /* Stay in the center */
+    opacity: 1;
+  }
+}
+
+@keyframes moveRightLeft {
+  0% {
+    right: -100%; /* Off-screen right */
+    opacity: 0;
+  }
+  50% {
+    right: 50%; /* Cross the center */
+    opacity: 1;
+  }
+  100% {
+    right: 50%; /* Stay in the center */
+    opacity: 1;
+  }
+}
+.text {
+  position: absolute;
+  top: 50%;
+  right: 0; /* Start from the right edge */
+  transform: translateY(-50%) translateX(50%); /* Start from the right, off-screen */
+  opacity: 0;
+  font-size: 70px;
+  color: #923e29;
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 0.5s ease-in-out;
+  will-change: transform, opacity;
+}
+
+.text-show {
+  opacity: 1;
+  transform: translateY(-70%) translateX(-40%); /* Move to the center */
+  font-size: 80px; /* Slightly bigger font when shown */
+}
+
+.text-hide {
+  opacity: 0;
+  transform: translateY(-50%) translateX(100%); /* Move off-screen to the right */
+  font-size: 60px; /* Slightly smaller font when hidden */
+}
+
+
+@media (max-width: 571px) {
+  .text{
+    font-size: 5px;
+  }
+  .animation-container {
+    height: 50vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .text{
+    font-size: 20px;
+  }
+  .animation-container {
+    height: 50vh;
+    width: 100vw;
+  }
+}
+@media (max-width: 992px) {
+  .text{
+    font-size: 30px;
+  }
+  .animation-container {
+    height: 50vh;
+    width: 100vw;
+  }
+}
