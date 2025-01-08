@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/crazynjersey/static/css/main.0acff454.css",
-    "main.js": "/crazynjersey/static/js/main.54637f4a.js",
+    "main.css": "/crazynjersey/static/css/main.6306772e.css",
+    "main.js": "/crazynjersey/static/js/main.ff1f5e08.js",
     "static/js/453.70cbf89c.chunk.js": "/crazynjersey/static/js/453.70cbf89c.chunk.js",
     "static/media/poster.jpg": "/crazynjersey/static/media/poster.44901d9b48bd17998626.jpg",
-    "static/media/image4.jpg": "/crazynjersey/static/media/image4.65a7e5d06f8a20576ae2.jpg",
-    "static/media/image2.jpg": "/crazynjersey/static/media/image2.bccb3aa1eb84836299ed.jpg",
-    "static/media/image1.jpg": "/crazynjersey/static/media/image1.a79bec94b1cc01302b93.jpg",
+    "static/media/left.png": "/crazynjersey/static/media/left.b6b4d4a3070ae29efee9.png",
+    "static/media/right.png": "/crazynjersey/static/media/right.bbbbe1e9a8fa75616796.png",
     "static/media/logo3.png": "/crazynjersey/static/media/logo3.7bd2bd755d33dd83625e.png",
     "static/media/comingsoon.jpg": "/crazynjersey/static/media/comingsoon.4eaa91cb95dee22b23b8.jpg",
     "static/media/logo4.png": "/crazynjersey/static/media/logo4.b23c40a68e6c57230f54.png",
     "index.html": "/crazynjersey/index.html",
-    "main.0acff454.css.map": "/crazynjersey/static/css/main.0acff454.css.map",
-    "main.54637f4a.js.map": "/crazynjersey/static/js/main.54637f4a.js.map",
+    "main.6306772e.css.map": "/crazynjersey/static/css/main.6306772e.css.map",
+    "main.ff1f5e08.js.map": "/crazynjersey/static/js/main.ff1f5e08.js.map",
     "453.70cbf89c.chunk.js.map": "/crazynjersey/static/js/453.70cbf89c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0acff454.css",
-    "static/js/main.54637f4a.js"
+    "static/css/main.6306772e.css",
+    "static/js/main.ff1f5e08.js"
   ]
 }
