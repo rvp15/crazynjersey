@@ -21,7 +21,7 @@ const OurCreations = () => {
               className="img-fluid d-none d-md-block"
               style={{ height: "350px", objectFit: "cover" }}
             />
-            <Card.Body>
+            <Card.Body style={{ backgroundColor: "black", color: "white" }}>
               <Card.Title className="fs-4">{item.Title}</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
                 Written by: {item.Writer}

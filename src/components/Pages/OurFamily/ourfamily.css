@@ -1,0 +1,62 @@
+/* ourFamily.css */
+
+.family-container {
+    padding: 40px;
+    background-color: #f4f4f4;
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center-align the entire container */
+  }
+  
+  h1.text-center {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .family-members {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between each family member */
+  }
+  
+  .family-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* To have space between the image and text */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .family-member-img-container {
+    flex: 1;
+    max-width: 150px; /* Limit image size */
+  }
+  
+  .family-member-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .family-member-info {
+    flex: 2;
+    padding-left: 20px;
+  }
+  
+  .family-member-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .family-member-role {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .family-member-description {
+    font-size: 1rem;
+    color: #777;
+  }
+  

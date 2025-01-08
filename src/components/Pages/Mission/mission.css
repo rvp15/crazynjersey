@@ -1,0 +1,33 @@
+.mission-container{
+    color: #ec6c4c;
+}
+
+.mission-txt{
+   padding: 5%;
+  }
+  .seethanam_logo{
+    padding: 2%;
+  }
+
+  .mission-container {
+    background-color: #000; /* Black background */
+    color: #ec6c4c; /* White text for readability */
+  }
+  
+  .mission-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ec6c4c;
+  }
+  
+  .mission-txt {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .seethanam-logo {
+    max-width: 50%; /* Restrict logo size */
+    margin: 0 auto;
+    display: block;
+  }
+  

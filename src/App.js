@@ -6,15 +6,17 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OurCreations from "./components/Pages/Creations/OurCreations";
 import CreationDetails from "./components/Pages/Creations/CreationDetails";
 import Mission from "./components/Pages/Mission/Mission";
+import OurFamily from "./components/Pages/OurFamily/OurFamily";
 
 function App() {
   let routes;
   routes = (
     <Routes>
-      <Route path="/" element={<MainPage />} />
+      <Route path="/crazynjersey" element={<MainPage />} />
       <Route path="/ourcreations" element={<OurCreations />} />
       <Route path="/creationdetails/:id" element={<CreationDetails />} />
       <Route path="/mission" element={<Mission/>}/>
+      <Route path="/ourfamily" element={<OurFamily/>}/>
     </Routes>
   );
   return (

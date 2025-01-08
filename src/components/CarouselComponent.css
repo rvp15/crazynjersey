@@ -14,7 +14,7 @@
 
 .image-left, .image-right {
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   opacity: 0;
   width: 20%; /* Adjust width as needed */
@@ -68,25 +68,25 @@
 .text {
   position: absolute;
   top: 50%;
-  right: 0; /* Start from the right edge */
-  transform: translateY(-50%) translateX(50%); /* Start from the right, off-screen */
+  left: 50%; /* Center horizontally */
+  transform: translate(-5%, -50%); /* Center both vertically and horizontally */
   opacity: 0;
   font-size: 70px;
   color: #ec6c4c;
-  transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 0.5s ease-in-out;
-  will-change: transform, opacity;
+  text-shadow: 0 0 0px #ec6c4c; /* No glow initially */
+  transition: opacity 2s ease-in-out, font-size 2s ease-in-out, text-shadow 2s ease-in-out;
 }
 
 .text-show {
   opacity: 1;
-  transform: translateY(-70%) translateX(-40%); /* Move to the center */
   font-size: 80px; /* Slightly bigger font when shown */
+  text-shadow: 0 0 30px #ec6c4c, 0 0 60px #ff9770; /* Add a glowing effect */
 }
 
 .text-hide {
   opacity: 0;
-  transform: translateY(-50%) translateX(100%); /* Move off-screen to the right */
   font-size: 60px; /* Slightly smaller font when hidden */
+  text-shadow: 0 0 0px #ec6c4c; /* Remove glow when hiding */
 }
 
 

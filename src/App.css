@@ -78,11 +78,3 @@ animation: pulsing 3s ease-in-out infinite;
   color: #ec6c4c;
 }
 
-.mission-txt{
-  box-shadow: 0 4px 8px white;
-  margin: 30px 50px 30px 50px;
-  padding: 60px;
-}
-.review-carousel{
-  background-color: rgb(156, 181, 181);
-}

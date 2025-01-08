@@ -1,0 +1,8 @@
+.detail-container{
+    background-color: black;
+    color: #ec6c4c;
+    max-width: 100vw;
+}
+.detail-container-content{
+    padding: 10%;
+}

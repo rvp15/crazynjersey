@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 import { creations } from "../../../data/creationdata";
 import { MdAccessTime } from "react-icons/md";
 import Reviews from "./Reviews";
-
+import './creation.css'
 const CreationDetails = () => {
   let { id } = useParams();
   const currentItem = creations.find((item) => item.id === parseInt(id));
   return (
-    <div className="container d-flex flex-column justify-content-center align-items-center">
-      <div className="text-center mt-4">
+    <div className="container d-flex flex-column justify-content-center align-items-center detail-container" >
+      <div className="text-center mt-4 detail-container-content">
         <h1>{currentItem.Title}</h1>
         <p>
           <span>
