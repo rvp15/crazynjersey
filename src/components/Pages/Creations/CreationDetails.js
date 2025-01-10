@@ -20,7 +20,8 @@ const CreationDetails = () => {
         <p className="fs-4 fs-md-5 fs-lg-6 fw-normal text-center mt-4">
           {currentItem.Description}
         </p>
-        <Reviews />
+        {currentItem.isCompleted ?  <Reviews />: null}
+       
         <img
           src={currentItem.poster}
           alt={currentItem.Title}
