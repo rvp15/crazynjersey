@@ -71,7 +71,6 @@
   left: 50%; /* Center horizontally */
   transform: translate(-5%, -50%); /* Center both vertically and horizontally */
   opacity: 0;
-  font-size: 70px;
   color: #ec6c4c;
   text-shadow: 0 0 0px #ec6c4c; /* No glow initially */
   transition: opacity 2s ease-in-out, font-size 2s ease-in-out, text-shadow 2s ease-in-out;
@@ -79,7 +78,7 @@
 
 .text-show {
   opacity: 1;
-  font-size: 80px; /* Slightly bigger font when shown */
+  font-size: 50px; /* Slightly bigger font when shown */
   text-shadow: 0 0 30px #ec6c4c, 0 0 60px #ff9770; /* Add a glowing effect */
 }
 
@@ -92,7 +91,7 @@
 
 @media (max-width: 571px) {
   .text{
-    font-size: 5px;
+    font-size: 10px;
   }
   .animation-container {
     height: 50vh;
